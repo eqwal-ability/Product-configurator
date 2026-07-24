@@ -79,7 +79,7 @@ a {
 }
 
 .site-header__logo {
-  height: clamp(32px, 5vw, 44px);
+  height: clamp(40px, 6vw, 56px);
   width: auto;
 }
 
@@ -204,9 +204,9 @@ a {
 .site-footer__mark {
   position: absolute;
   right: -1.5rem;
-  bottom: -2.75rem;
+  bottom: -0.5rem;
   z-index: 0;
-  height: 150px;
+  height: 100px;
   width: auto;
   opacity: 0.9;
   pointer-events: none;
@@ -225,8 +225,8 @@ a {
   }
 
   .site-footer__mark {
-    height: 100px;
-    bottom: -1.75rem;
+    height: 90px;
+    bottom: -0.5rem;
   }
 }
 
@@ -238,8 +238,8 @@ a {
   }
 
   .site-footer__mark {
-    height: 72px;
-    bottom: -1rem;
-    right: -0.75rem;
+    height: 65px;
+    bottom: 0rem;
+    right: 0rem;
   }
 }
