@@ -79,7 +79,7 @@ a {
 }
 
 .site-header__logo {
-  height: clamp(40px, 6vw, 56px);
+  height: clamp(50px, 7vw, 65px);
   width: auto;
 }
 
@@ -203,10 +203,10 @@ a {
 
 .site-footer__mark {
   position: absolute;
-  right: -1.5rem;
-  bottom: -0.5rem;
+  right: -0.5rem;
+  bottom: 0rem;
   z-index: 0;
-  height: 100px;
+  height: 90px;
   width: auto;
   opacity: 0.9;
   pointer-events: none;
