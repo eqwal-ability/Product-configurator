@@ -1,26 +1,15 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eqwal Ability</title>
-  <meta name="description" content="Eqwal Ability ontwikkelt op maat gemaakte orthopedische productconfiguratoren: Cheneau korset, AFO, custom seating en custom mattress.">
+  <meta name="description" content="This site is no longer active. Please visit our current product configurator.">
   <link rel="icon" type="image/png" href="images/bedrijfslogo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6XERSC4BP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Q6XERSC4BP');
-</script>
-  
 </head>
 <body>
 
@@ -32,49 +21,67 @@
     </div>
   </header>
 
-  <main class="home-main">
-    <section class="product-grid" aria-label="Producten">
+  <main class="coming-soon-main">
+    <div class="inactive-notice">
 
-    <a class="product-card" href="https://eqwal-ability.github.io/Cheneau-configurator/" target="_blank" rel="noopener noreferrer">
-  <span class="product-card__image-wrap">
-    <img class="product-card__image" src="images/afbeelding1.png" alt="Cheneau" loading="lazy">
-  </span>
-  <span class="product-card__label">Cheneau</span>
-</a>
-
-      <a class="product-card" href="https://eqwal-ability.github.io/AFO-Configurator/" target="_blank" rel="noopener noreferrer">
-        <span class="product-card__image-wrap">
-          <img class="product-card__image" src="images/afbeelding2.png" alt="AFO" loading="lazy">
-        </span>
-        <span class="product-card__label">AFO</span>
-      </a>
-
-      <a class="product-card" href="https://eqwal-ability.github.io/Custom-seating-configurator/" target="_blank" rel="noopener noreferrer">
-  <span class="product-card__image-wrap">
-    <img class="product-card__image" src="images/afbeelding3.png" alt="Custom seating" loading="lazy">
-  </span>
-  <span class="product-card__label">Custom seating</span>
-</a>
-
-    <a class="product-card" href="https://eqwal-ability.github.io/Custom-mattress-configurator/" target="_blank" rel="noopener noreferrer">
-  <span class="product-card__image-wrap">
-    <img class="product-card__image" src="images/afbeelding4.png" alt="Custom mattress" loading="lazy">
-  </span>
-  <span class="product-card__label">Custom mattress</span>
-</a>
-
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="site-footer__inner">
-      <p class="site-footer__text">
-        Developed by Eqwal Ability Belgium. Questions or concerns? Contact us through <a href="mailto:rd@eqwal.be">rd@eqwal.be</a>.
+      <p class="inactive-notice__lang">
+        <span class="inactive-notice__tag">EN</span>
+        This site is no longer active. For our most recent product configurator, please visit
+        <a href="https://www.eqwalgroup.be/home/">https://www.eqwalgroup.be/home/</a>.<br>
+        Thank you!
       </p>
+
+      <p class="inactive-notice__lang">
+        <span class="inactive-notice__tag">NL</span>
+        Deze website is niet langer actief. Voor onze meest recente productconfigurator, bezoek
+        <a href="https://www.eqwalgroup.be/home/">https://www.eqwalgroup.be/home/</a>.<br>
+        Dank u!
+      </p>
+
+      <p class="inactive-notice__lang">
+        <span class="inactive-notice__tag">FR</span>
+        Ce site n'est plus actif. Pour notre configurateur de produits le plus récent, veuillez consulter
+        <a href="https://www.eqwalgroup.be/home/">https://www.eqwalgroup.be/home/</a>.<br>
+        Merci !
+      </p>
+
     </div>
-    <img class="site-footer__mark" src="images/eq-logo-wit.png" alt="" aria-hidden="true">
-  </footer>
+  </main>
 
   <script src="js/script.js"></script>
 </body>
 </html>
+
+/* ==========================================================================
+   Inactive-site notice
+   ========================================================================== */
+
+.inactive-notice {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  max-width: 640px;
+}
+
+.inactive-notice__lang {
+  font-family: var(--font-family-base);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-navy);
+}
+
+.inactive-notice__tag {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-navy);
+  opacity: 0.55;
+  margin-bottom: 0.25rem;
+}
+
+.inactive-notice__lang a {
+  color: var(--color-navy);
+  text-decoration: underline;
+}
